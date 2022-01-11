@@ -4,12 +4,12 @@ Wie der Name schon sagt, möchte ich hier meine Skripte zur täglichen und nicht
 
 ## mkproject.sh
 
-* Nimmt den ersten Parameter als Projektname [x]
-* Falls keine Parameter angegeben sind, den Projektnamen erfragen [x]
-* Legt den Projektordner an und wechselt dann in diesen Ordner [x]
-* Legt dort die Ordner build, images, src an [x]
-* Legt eine build.xml an [x]
-* git init [x]
-* git add [x]
-* git commit [x]
+* Nimmt den ersten Parameter als Projektname
+* Falls keine Parameter angegeben sind, den Projektnamen erfragen
+* Legt den Projektordner an und wechselt dann in diesen Ordner
+* Legt dort die Ordner build, images, src an
+* Legt eine build.xml an
+* git init
+* git add
+* git commit
 

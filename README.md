@@ -9,7 +9,5 @@ Wie der Name schon sagt, möchte ich hier meine Skripte zur täglichen und nicht
 * Legt den Projektordner an und wechselt dann in diesen Ordner
 * Legt dort die Ordner build, images, src an
 * Legt eine build.xml an
-* git init
-* git add
-* git commit
+* Legt ein VErzeichnis auf dem Web-Server an.
 

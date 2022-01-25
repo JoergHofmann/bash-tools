@@ -20,8 +20,8 @@ mkdir "0_OUT"
 mkdir "0_TMP"
 mkdir "images"
 mkdir "src"
-cd "$local_www"
-mkdir "$projektname"
 echo -e "<?xml version="1.0"?>\n\n" > build.xml
 echo -e "<project name=\"$projektname\" basedir=\".\">\n\n\n" >> build.xml
 echo "</project>" >> build.xml
+cd "$local_www"
+mkdir "$projektname"

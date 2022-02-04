@@ -23,5 +23,8 @@ mkdir "src"
 echo -e "<?xml version="1.0"?>\n\n" > build.xml
 echo -e "<project name=\"$projektname\" basedir=\".\">\n\n\n" >> build.xml
 echo "</project>" >> build.xml
-cd "$local_www"
-mkdir "$projektname"
+cp -av $HOME/jho-lib/vcTeX/. ./
+git init
+git config user.name "Josh"
+git config user.email "joerg@jho-home.de"
+cp -av $HOME/jho-lib/4Git/gitignore ./.gitignore

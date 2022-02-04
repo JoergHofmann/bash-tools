@@ -28,3 +28,6 @@ git init
 git config user.name "Josh"
 git config user.email "joerg@jho-home.de"
 cp -av $HOME/jho-lib/4Git/gitignore ./.gitignore
+git add .
+git commit -m 'Erster Commit'
+git status

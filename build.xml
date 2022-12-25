@@ -4,7 +4,7 @@
 
 	<target name="main">
 		<echo message="Jetzt geht's los." />
-		<copy todir="../../../.local/bin">
+		<copy todir="${user.home}/.local/bin">
 			<fileset dir="." includes="*.sh" />
 		</copy>
 	</target>

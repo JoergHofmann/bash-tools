@@ -3,7 +3,8 @@
 # Nimmt den ersten Parameter als Projektname [x]
 # Falls keine Parameter angegeben sind, den Projektnamen erfragen [x]
 # Legt den Projektordner an und wechselt dann in diesen Ordner [x]
-# Legt dort die Ordner 0_OUT, 0_TMP, images, src an [x]
+# Legt dort die Ordner 0_OUT, 0_TMP, bilder, formate und scripts an [x]
+# Wenn $2 mit angegeben wird und "hugo" lautet, wird auch ein Verzeichnis 0_HUGO_$projektname []
 # Legt ein Verzeichnis auf dem Web-Server an. [x]
 # Legt eine build.xml an [x]
 
@@ -18,10 +19,21 @@ mkdir "$projektname"
 cd "$projektname"
 mkdir "0_OUT"
 mkdir "0_TMP"
-mkdir "images"
-mkdir "src"
+mkdir "bilder"
+mkdir "formate"
+mkdir "scripts"
+
+if [ -n "$2" ]
+then
+    if [ "$2" = "hugo" ]
+	then
+	    h="0_HUGO_"
+	    hugo new site $h$projektname
+    fi
+fi
+
 echo -e "<?xml version="1.0"?>\n\n" > build.xml
 echo -e "<project name=\"$projektname\" basedir=\".\">\n\n\n" >> build.xml
 echo "</project>" >> build.xml
-cd "$local_www"
+cd "$local_www_dir"
 mkdir "$projektname"

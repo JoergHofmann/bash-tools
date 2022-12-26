@@ -28,8 +28,7 @@ if [ -n "$2" ]
 then
     if [ "$2" = "hugo" ]
 	then
-	    h="0_HUGO_"
-	    hugo new site $h$projektname
+	    hugo new site 0_HUGO -f "yaml"
     fi
 fi
 

@@ -3,8 +3,8 @@
 # Nimmt den ersten Parameter als Projektname [x]
 # Falls keine Parameter angegeben sind, den Projektnamen erfragen [x]
 # Legt den Projektordner an und wechselt dann in diesen Ordner [x]
-# Legt dort die Ordner 0_OUT, 0_TMP, bilder, formate und scripts an [x]
-# Wenn $2 mit angegeben wird und "hugo" lautet, wird auch ein Verzeichnis 0_HUGO_$projektname []
+# Legt dort die Ordner 0_OUT, 0_TMP, bilder, formate, includes und scripts an [x]
+# Wenn $2 mit angegeben wird und "hugo" lautet, wird auch ein Verzeichnis 0_HUGO_$projektname [x]
 # Legt ein Verzeichnis auf dem Web-Server an. [x]
 # Legt eine build.xml an [x]
 
@@ -21,6 +21,7 @@ mkdir "0_OUT"
 mkdir "0_TMP"
 mkdir "bilder"
 mkdir "formate"
+mkdir "includes"
 mkdir "scripts"
 
 if [ -n "$2" ]

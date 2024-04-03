@@ -19,4 +19,6 @@ Wie der Name schon sagt, möchte ich hier meine Skripte zur täglichen und nicht
 * kopiert vc, vc-git.awk und .gitignore
 * lokales git config
 
+## starthugo.sh
 
+* startet hugo-Server im Unterordner "0_HUGO"
